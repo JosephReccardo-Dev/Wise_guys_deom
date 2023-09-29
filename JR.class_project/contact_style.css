@@ -1,0 +1,271 @@
+@charset "utf-8"
+
+/*
+   WA2305 CSS Web Tutorial
+  
+   Wise Guys Home
+   Author: Joseph Reccardo
+   Date:   9/22/2023
+   
+   Filename: contact_style.css
+   
+   This file contains the layout styles used in the Wise Guys
+   home page.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a gradient background for the body */
+body {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(125, 125, 125));
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Style the logo */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Style the navigation menu */
+nav.horizontal {
+    background-color: rgb(51, 51, 51);
+    padding: 10px 0;
+}
+
+ul.mainmenu {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: rgb(0, 123, 255);
+}
+
+/* Style the contact header */
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+/* Style the seller section */
+#seller {
+    padding: 20px;
+}
+
+.ebay1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ebay1 img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+article {
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Style the "Find Us On" section */
+#findPhoto {
+    padding: 20px;
+}
+
+#findUs {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.findList {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style the contact location section */
+#contLocation {
+    padding: 20px;
+}
+
+#weAre {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+aside {
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Make links in the footer white and remove underlines */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the social media section in the footer */
+#socialMedia {
+    padding: 20px;
+}
+
+#footNav ul {
+    list-style-type: none;
+}
+
+.footList {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 948px) {
+    /* Adjust navigation menu for tablet screens */
+    nav.horizontal {
+        padding: 5px 0;
+    }
+
+    ul.mainmenu {
+        text-align: center;
+    }
+
+    li.menuitems {
+        display: block;
+        margin: 0;
+    }
+
+    li.menuitems a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    /* Adjust font size for welcome section headings and paragraphs */
+    h1#home1 {
+        font-size: 24px;
+    }
+
+    h2.home2,
+    h2.home3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Adjust image size for tablet screens */
+    #joe {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0; /* Remove rounded corners */
+        box-shadow: none; /* Remove the shadow */
+    }
+
+    /* Adjust font size and padding for social media links in footer */
+    #socialMedia ul {
+        text-align: center;
+    }
+
+    .footList {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 823px) {
+    /* Adjust navigation menu for mobile screens */
+    nav.horizontal {
+        padding: 5px 0;
+    }
+
+    ul.mainmenu {
+        text-align: center;
+    }
+
+    li.menuitems {
+        display: block;
+        margin: 0;
+    }
+
+    li.menuitems a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    /* Adjust font size for welcome section headings and paragraphs */
+    h1#home1 {
+        font-size: 20px;
+    }
+
+    h2.home2,
+    h2.home3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Adjust image size for mobile screens */
+    #joe {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0; /* Remove rounded corners */
+        box-shadow: none; /* Remove the shadow */
+    }
+
+    /* Adjust font size and padding for social media links in footer */
+    #socialMedia ul {
+        text-align: center;
+    }
+
+    .footList {

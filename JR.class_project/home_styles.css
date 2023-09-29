@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/*
+   WA2305 CSS Web Tutorial
+  
+   Wise Guys Home
+   Author: Joseph Reccardo
+   Date:   9/18/2023
+   
+   Filename: home.html
+   
+   This file contains the layout styles used in the Wise Guys
+   home page.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a gradient background for the body */
+body {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(125, 125, 125));
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Style the logo */
+#logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Style the navigation menu */
+nav.horizontal {
+    background-color: rgb(51, 51, 51);
+    padding: 10px 0;
+}
+
+ul.mainmenu {
+    list-style: none;
+    padding: 0;
+}
+
+li.menuitems {
+    display: inline;
+    margin-right: 20px;
+}
+
+li.menuitems a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+li.menuitems a:hover {
+    color: rgb(0, 125, 255);
+}
+
+/* Style the welcome sections */
+section#welcome1,
+section#welcome2,
+section#welcome3 {
+    padding: 20px;
+}
+
+/* Style headings and paragraphs in the welcome sections */
+h1#home1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2.home2,
+h2.home3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Style the image of Joe */
+#joe {
+    max-width: auto;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Style the social media links */
+cite#social {
+    font-weight: bold;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Style the footer */
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Make links in the footer white and remove underlines */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the social media section in the footer */
+#socialMedia {
+    padding: 20px;
+}
+
+#footNav ul {
+    list-style-type: none;
+}
+
+.footList {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 948px) {
+    /* Adjust navigation menu for tablet screens */
+    nav.horizontal {
+        padding: 5px 0;
+    }
+
+    ul.mainmenu {
+        text-align: center;
+    }
+
+    li.menuitems {
+        display: block;
+        margin: 0;
+    }
+
+    li.menuitems a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    /* Adjust font size for welcome section headings and paragraphs */
+    h1#home1 {
+        font-size: 24px;
+    }
+
+    h2.home2,
+    h2.home3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Adjust image size for tablet screens */
+    #joe {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0; /* Remove rounded corners */
+        box-shadow: none; /* Remove the shadow */
+    }
+
+    /* Adjust font size and padding for social media links in footer */
+    #socialMedia ul {
+        text-align: center;
+    }
+
+    .footList {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 823px) {
+/* Adjust navigation menu for mobile screens */
+nav.horizontal {
+    padding: 5px 0;
+}
+
+ul.mainmenu {
+    text-align: center;
+ }
+
+li.menuitems {
+    display: block;
+    margin: 0;
+}
+
+li.menuitems a {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Adjust font size for welcome section headings and paragraphs */
+h1#home1 {
+    font-size: 20px;
+}
+
+h2.home2,
+h2.home3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Adjust image size for mobile screens */
+#joe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove the shadow */
+}
+
+/* Adjust font size and padding for social media links in footer */
+#socialMedia ul {
+    text-align: center;
+}
